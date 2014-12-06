@@ -9,7 +9,9 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "psr/http-message": "~0.5"
+    },
     "require-dev": {
         "codeception/codeception": "2.1.x-dev",
         "squizlabs/php_codesniffer": "~1.5",

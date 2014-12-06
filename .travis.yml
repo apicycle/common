@@ -6,7 +6,8 @@ php:
 
 before_script:
   - curl -s https://getcomposer.org/installer|php
-  - php composer.phar install --dev --no-interaction
+  # travis can't authenticate as github user, so it won't have access for dists
+  - php composer.phar install --dev --no-interaction --prefer-source
 
 script:
   - php vendor/bin/phploc src
