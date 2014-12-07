@@ -1,3 +1,9 @@
 # Composer stuff
 /vendor/
 /composer.lock
+
+# IDE stuff
+/.idea
+/.project
+/.settings
+/nbproject

@@ -9,6 +9,16 @@
         }
     ],
     "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Apicycle\\Common\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Apicycle\\Common\\Tests\\": "tests/"
+        }
+    },
     "require": {
         "psr/http-message": "~0.5"
     },
