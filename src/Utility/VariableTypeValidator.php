@@ -15,6 +15,8 @@ class VariableTypeValidator
     /**
      * Private constructor, only static methods are allowed.
      *
+     * @codeCoverageIgnore
+     *
      * @since 0.1.0
      */
     private function __construct()

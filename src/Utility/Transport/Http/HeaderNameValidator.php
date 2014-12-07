@@ -23,6 +23,17 @@ class HeaderNameValidator
     const PATTERN = '~^[a-z\-_!\$]+$~i';
 
     /**
+     * Private constructor, only static methods are allowed.
+     *
+     * @codeCoverageIgnore
+     *
+     * @since 0.1.0
+     */
+    private function __construct()
+    {
+    }
+
+    /**
      * Validates header name and returns true or false for valid and invalid
      * headers.
      *
