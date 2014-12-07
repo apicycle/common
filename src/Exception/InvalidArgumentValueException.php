@@ -106,5 +106,4 @@ class InvalidArgumentValueException extends InvalidArgumentException
     {
         return $this->argumentValue;
     }
-
 }
