@@ -1,3 +1,7 @@
+# Apicycle / Common shared library
+
+[![Build Status](https://travis-ci.org/apicycle/common.svg)](https://travis-ci.org/apicycle/common)
+
 # Hola
 
 Hi there, folks.
