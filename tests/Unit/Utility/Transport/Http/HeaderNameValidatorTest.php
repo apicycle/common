@@ -7,6 +7,8 @@ use Codeception\TestCase\Test;
 /**
  * Tests HTTP header name validator.
  *
+ * @coversDefaultClass \Apicycle\Common\Utility\Transport\Http\HeaderNameValidator
+ *
  * @version 0.1.0
  * @since   0.1.0
  * @package Apicycle\Common\Tests\Unit\Utility\Transport\Http
@@ -53,6 +55,8 @@ class HeaderNameValidatorTest extends Test
      *
      * @dataProvider validHeaderNamesProvider
      *
+     * @covers ::validateHeaderName
+     *
      * @return void
      * @since 0.1.0
      */
@@ -69,6 +73,8 @@ class HeaderNameValidatorTest extends Test
      * @param string $invalidHeaderName Invalid HTTP header name.
      *
      * @dataProvider invalidHeaderNamesProvider
+     *
+     * @covers ::validateHeaderName
      *
      * @return void
      * @since 0.1.0

@@ -6,11 +6,11 @@ php:
 
 before_script:
   - composer self-update
-  - composer install --dev --no-interaction
+  - composer install --dev --no-interaction --prefer-source
 
 script:
   - php vendor/bin/phploc src
-  - php vendor/bin/phpmd src text codesize,unusedcode,controversial,naming,design,cleancode
+  - php vendor/bin/phpmd src text codesize,unusedcode,controversial,naming,design,tests/_support/phpmd/cleancode.xml
   - php vendor/bin/phpcs --standard=PSR1,PSR2 src
   - php vendor/bin/codecept run --coverage --coverage-xml --coverage-html
 #after_script:

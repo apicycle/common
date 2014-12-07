@@ -88,6 +88,8 @@ class InvalidHeaderValueException extends InvalidArgumentException
      * @param string       $headerName  Header name.
      * @param string|mixed $headerValue Header value.
      *
+     * @SuppressWarnings(PHPMD.ElseExpression)
+     *
      * @return string Composed message.
      * @since 0.1.0
      */
